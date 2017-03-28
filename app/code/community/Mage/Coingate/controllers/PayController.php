@@ -1,6 +1,6 @@
 <?php
 
-class Mage_Coingate_PayController extends Mage_Core_Controller_Front_Action
+class Mage_Eligebtc_PayController extends Mage_Core_Controller_Front_Action
 {
 
     public function getCheckout()
@@ -19,14 +19,14 @@ class Mage_Coingate_PayController extends Mage_Core_Controller_Front_Action
         $session->setPayQuoteId($session->getQuoteId());
         $session->unsQuoteId();
 
-        $coingate = Mage::getModel('coingate/CoingateFactory');
+        $coingate = Mage::getModel('coingate/EligebtcFactory');
 
         $this->_redirectUrl($coingate->getRequest());
     }
 
     public function callbackAction()
     {
-        $this->getResponse()->setBody($this->getLayout()->createBlock('coingate/callback')->toHtml());
+        $this->getResponse()->setBody($this->getLayout()->createBlock('eligebtc/callback')->toHtml());
     }
 
     public function cancelAction()
