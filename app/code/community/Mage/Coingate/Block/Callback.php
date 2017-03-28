@@ -1,11 +1,11 @@
 <?php
 
-class Mage_Coingate_Block_Callback extends Mage_Core_Block_Abstract
+class Mage_Eligebtc_Block_Callback extends Mage_Core_Block_Abstract
 {
     protected function _toHtml()
     {
-        $coingate = Mage::getModel('coingate/CoingateFactory');
+        $eligebtc = Mage::getModel('eligebtc/EligebtcFactory');
 
-        return $coingate->validateCallback();
+        return $eligebtc->validateCallback();
     }
 }
