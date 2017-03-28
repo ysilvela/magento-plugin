@@ -1,11 +1,11 @@
 <config>
     <modules>
-        <Mage_Coingate>
+        <Mage_Eligebtc>
             <active>true</active>
             <codePool>community</codePool>
             <depends>
                 <Mage_Payment/>
             </depends>
-        </Mage_Coingate>
+        </Mage_Eligebtc>
     </modules>
 </config>
